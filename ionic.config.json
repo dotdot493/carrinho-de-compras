@@ -1,0 +1,7 @@
+{
+  "name": "appbd",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

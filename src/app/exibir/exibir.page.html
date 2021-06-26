@@ -1,0 +1,28 @@
+<ion-header [translucent]= "true">
+  <ion-toolbar color= "primary">
+    <ion-title>
+      Lista de Produtos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  
+  <ion-list>
+    <ion-item *ngFor="let product of lista">
+      
+      <ion-avatar item-left>
+        <img src="https://coberturaeconimicsolar.000webhostapp.com/ionic/uploads/foto{{product.codigo}}.jpg">
+      </ion-avatar>
+
+        <ion-label> &nbsp; {{product.produto}}</ion-label>
+      <p item-right>R$ {{product.preco}}</p>
+    </ion-item>  
+  </ion-list>
+  
+  <ion-button   expand="full" color="danger" href="home">Voltar</ion-button>
+  
+
+</ion-content>
+

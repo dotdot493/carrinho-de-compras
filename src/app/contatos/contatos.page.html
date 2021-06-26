@@ -1,0 +1,63 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar color= 'success'>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Encomendas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br><br><br>
+  <ion-item>
+    <ion-label>Compra:</ion-label>
+    <ion-input type="number"[(ngModel)]="formulario.valor" placeholder="Valor"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" color="danger" (click)="dobrar()">Pegue aqui seu desconto</ion-button>
+ 
+  <ion-item>
+    <ion-label>Encomenda Realizada:</ion-label>
+    <ion-input type="number" placeholder="Total" value="{{desconto}}"></ion-input>
+  </ion-item>
+
+  <br><br><br>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed"
+ >
+    <ion-fab-button>Menu</ion-fab-button>
+    <ion-fab-list side="top">
+      
+    </ion-fab-list>
+  
+    <ion-fab-list side="end">
+      <ion-fab-button href="https://sitiopousadadaalegria.com/">
+        <ion-icon name="logo-chrome"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button href="http://wa.me/5532920002348?text=Olá seja bem vindo!">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </ion-fab-button>
+      
+    </ion-fab-list>
+  
+   
+  
+    <ion-fab-list side="start">
+      <ion-fab-button>
+        <ion-icon name="logo-youtube"></ion-icon>        </ion-fab-button>
+      <ion-fab-button href="home">
+        <ion-icon name="home"></ion-icon>
+      </ion-fab-button>
+      
+    </ion-fab-list>
+  </ion-fab>
+
+  
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar color="success">
+    <center><ion-title>Aprovetem!</ion-title></center>
+    
+  </ion-toolbar>
+</ion-footer>
+
